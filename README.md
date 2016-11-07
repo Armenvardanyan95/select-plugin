@@ -40,7 +40,7 @@ And use it as a simple directive on a select element:
  To make the box multiselect, add **multiple="multiple"** to your select element. It will not respond to **{"multiple": true}** option.
  For tagging add **{tags: true}** to the list of your preferences. You can use any preferences allowed by the Select2 plugin (for complete list of allowed options refer to [Select2 official documentation](https://select2.github.io/options.html)).
  
- ##Notes
+ ##Notes##
  For your consideration:
  
  ######Syntax Requirements
