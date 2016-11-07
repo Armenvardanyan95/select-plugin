@@ -1,0 +1,27 @@
+{
+  "name": "select-plugin",
+  "authors": [
+    "Armen Vardanyan"
+  ],
+  "description": "A plugin for Angular using Select2",
+  "main": "./dist/select.min.js",
+  "keywords": [
+    "angular",
+    "select2",
+    "jQuery"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#^1.5.8",
+    "jquery": "^3.1.1",
+    "select2": "^4.0.3"
+  }
+}
