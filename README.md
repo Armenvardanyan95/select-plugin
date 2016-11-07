@@ -42,7 +42,7 @@ And use it as a simple directive on a select element:
  
  
  
-## Getting Started
+## Notes
 
  
 ###### Syntax Requirements
