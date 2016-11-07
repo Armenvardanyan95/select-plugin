@@ -53,5 +53,5 @@ If a name is provided for your select element, the directive will broadcast **se
 ##Dependencies
 This directive depends on:
   - jQuery ("^3.1.1")
-  - Angular ("^1.5.8")
+  - Angular ("^1.5.8") 
   - Select2 ("^4.0.3")
