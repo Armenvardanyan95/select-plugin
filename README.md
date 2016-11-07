@@ -41,7 +41,8 @@ And use it as a simple directive on a select element:
  For tagging add **{tags: true}** to the list of your preferences. You can use any preferences allowed by the Select2 plugin (for complete list of allowed options refer to [Select2 official documentation](https://select2.github.io/options.html)).
  
  ## Notes
- ####### Syntax Requirements
+ 
+ ###### Syntax Requirements
   - Directive requires **ng-model** directive to run. 
   - You may render your select dropdown using **ng-options** or **ng-repeat**
   - If you want to load data asynchronously, write the results of your AJAX request inside your **ng-model**, and the dropdown will be updated automagically
