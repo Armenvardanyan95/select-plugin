@@ -19,12 +19,13 @@
         function link(scope, element, attrs, ngModel) {
             $(function() {
                 var options = scope.$eval(attrs.selectPlugin) || {};
+                var ngModel = attrs.ngModel;
                 if(attrs.placeholder){
                     options.placeholder = attrs.placeholder;
                 }
                 $(element).select2(options);
                 if (!attrs.multiple) {
-                    scope.$watch(attrs.ngModel, function(newValue, oldValue) {
+                    scope.$watch(ngModel, function(newValue, oldValue) {
                         $timeout(function() {
                             if (newValue != null &&
                                 !(typeof newValue == 'string' &&
@@ -41,9 +42,9 @@
                         });
                     });
                 } else {
-                    scope.$watchCollection(attrs.ngModel, function(newValue) {
+                    scope.$watchCollection(ngModel, function(newValue) {
                         $timeout(function() {
-                            if (Array.isArray(newValue) && newValue.length != 0 &&
+                            if (angular.isArray(newValue) && newValue.length != 0 &&
                                 typeof newValue != 'undefined') {
                                 if(options.tags){
                                     newValue = $.unique(newValue.sort());
